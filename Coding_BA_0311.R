@@ -14,7 +14,7 @@ library(binsreg)
 
 # This loads all the relevant data and gives it names. csv_read2 ist used to interprete semicolon-separated Excel sheets (csv_read has comma-separated as default.) 
 Catastrophe_data <- read_csv2("Catastrophe_Data.csv")
-Location_data <- read_csv2("location_disambiguated_2.1.1.csv")
+Location_data <- read_csv2("location_disambiguated.csv")
 # The application and assignee data I loaded directly as tsv because both data sets are too large to load in Excel and save as csv (which might be unneccesary anyway tbh). header = TRUE assures that the first row is read as column name and sep="\t" specifies the data to be tab-separated.
 Application_data <- read.delim("g_application.tsv", header=TRUE, sep="\t")
 Assignee_data <- read.delim("g_assignee_disambiguated.tsv", header=TRUE, sep="\t")
